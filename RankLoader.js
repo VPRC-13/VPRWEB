@@ -5,7 +5,7 @@ return Response.text();
 })
 .then(function(Text){
 document.getElementById("LowRanks").innerHTML = Text;
-// alert("LOADEDLULlLLlll")
+
 });
 
 
