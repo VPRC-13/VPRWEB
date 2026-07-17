@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&display=swap');
+
+:root{
+--VPRDR: #770606;
+--VPRFLGLG: #7a6f05;
+--VPRTEXTCOL: #363636;
+--VPRALERT:  #dd0000;
+}
+.alert{
+    font-family:"Black Ops One", sans-serif;
+    color: var(--VPRALERT);
+    background-color: black;
+}
+.center{
+    text-align: center;
+    font-family: 'inter', sans-serif;
+   color: var(--VPRTEXTCOL);
+}
+.left{
+    text-align: left;
+    font-family: 'inter', sans-serif;
+    color: var(--VPRTEXTCOL);
+}
+.right{
+    text-align: left;
+    font-family: 'inter', sans-serif;
+    color: var(--VPRTEXTCOL);
+}
+.TitleHead{
+text-align: center;
+font-family: 'monsterraat' sans-serif;
+color: white;
+background-color: #770606;
+}
+.HeadersLeft{
+    text-align: left;
+    color: #363636;
+    font-family: 'monsterraat' sans-serif;
+}
+.HeadersRight{
+    
+    text-align: right;
+    color: #363636;
+    font-family: 'monsterraat' sans-serif;
+}
+.middleLinks{
+    
+    
+    text-align: middle;
+    color: #363636;
+    font-family: 'monsterraat' sans-serif;
+}
+.Transcript{
+    font-family: 'Share Tech Mono', monospace;
+}
+.button{
+    background-color: #810202;
+    outline-width: 30%;
+    outline-style: solid;
+    outline-color: #363636;
+    color: black;
+    font-family: 'inter', sans-serif;
+}
+</style>
+<audio id="VPRAS">
+<source src="VPRASRAID.m4a">
+</audio>
+<audio id="VPRN">
+    <source src="VPROSTNuke.m4a">
+</audio>
+
+</head>
+<body>
+
+<div class="alert">
+    <h2>ALL AUDIO HERE IS REMIXED PIXABAY MUSIC, AND THUS COPYWRIGHT FREE. CREDITS TO THE ORIGINAL TRACK CREATORS ARE BELOW THE TRACKS.</h2>
+</div>
+<br>
+<br>
+<button class="button" onclick="PNT()">
+    Play VPR Nuke Theme
+</button>
+<br>
+<p>Original Track by Palyudin on Pixabay.</p>
+<br>
+<button class="button" onclick="PVPRS()">Play VPRAS Raid OST</button>
+<br>
+<p>original song by TuneTank on pixabay.</p>
+
+<h3>Volume Control</h3>
+<br>
+<input type="range"
+id="volumeSlide"
+min="0"
+max="100"
+value="20"
+oninput="Vol()">
+
+
+<script>
+    var VPRD = document.getElementById("VPRAS");
+    var VPRNT = document.getElementById("VPRN");
+    function PVPRS(){
+        VPRD.play();
+        VPRD.currentTime = 0;
+        VPRNT.pause();
+    }
+    function PNT(){
+   VPRNT.play();
+   VPRNT.currentTime = 0;
+   VPRD.pause();
+    }
+    function pawse(){
+        VPRD.pause();
+        VPRNT.pause();
+    }
+    
+    function STOP(){
+        VPRD.pause();
+        VPRD.currentTime = 0;
+    }
+    function Vol(){
+        var volume = Number(document.getElementById("volumeSlide").value);
+        var ActV = volume / 100;
+        VPRD.volume = ActV;
+        VPRNT.volume = ActV;
+    } 
+</script>
+</body>
+</html>

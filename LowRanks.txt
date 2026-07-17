@@ -1,13 +1,13 @@
 PRE RANKS
-
-Applicant
-Prospect (you try out for beginner branches at this rank)
-Trainee
-
-LOW RANKS
+----------------------------------------------------------------------------------------------------
+Applicant                                                                                           
+Prospect (you try out for beginner branches at this rank)                                           
+Trainee                                                                                             
+----------------------------------------------------------------------------------------------------
+LOW RANKS                                                                                           
 
 E1 (private)
-E2 (P 2nd class)
+E2 (P 2nd class)                                                                                     
 E3 (P 1st class)
 E4 (Junior cpl)
 E5 (cpl)
@@ -18,7 +18,7 @@ E9 (Jr Taskforce SGT)
 E10 (Taskforce SGT)
 E11 (Jr Engineer)
 E12 (Engineer)
-
+-----------------------------------------------------------------------------------------------------
 MID RANKS
 E13 (branch split, you become a specialized branch recruit for LV2 units)
 E14 (jr specialist)
@@ -29,6 +29,7 @@ E18 (operative)
 E19 (sr operative)
 E20 (High Prospect, eligibility for joining Spec Ops to contiue the 'operative' rank tree)
 E21 (Drill Sergant)
+-------------------------------------------------------------------------------------------------------
 WARRANT RANKS (continuing without joining a legion or HiCom)
 W1 (jr NCO)
 W2 (NCO)
@@ -42,7 +43,7 @@ W9 ( NCO Trainer)
 W10 ( Jr Branch Leader)
 W11 (Branch leaders assistant)
 W12 (Branch Leader, automatic placement on the national council with full ties to your branch)
-
+-----------------------------------------------------------------------------------------------------------
 OFFICER RANKS (Being accepted to HiCom, losing all ties to your previous branches)
 O1 (Officer in training)
 O2(officer undergraduate)
@@ -76,5 +77,6 @@ O29 (4IC (availible))
 O30 (3IC (taken by 'clovers'))
 O31 (2IC (Taken by 'Silly Guy'))
 HIGHEST RANK: C-13, UNOBTAINABLE
+--------------------------------------------------------------------------------------------------------------
 Legion RANKS
 NONE availible
