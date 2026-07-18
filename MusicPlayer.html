@@ -69,11 +69,44 @@ background-color: #770606;
 }
 .button{
     background-color: #810202;
-    outline-width: 30%;
-    outline-style: solid;
-    outline-color: #363636;
+    border-width: 100%;
+    border-style: solid;
+    border-color: #363636;
     color: black;
     font-family: 'inter', sans-serif;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    
+}
+.VoSli{
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+   
+}
+.VoSli::-webkit-slider-runnable-track {
+    background-color: #000000;
+    width: 50%;
+    height: 30%;
+    border-radius: 50%;
+}
+.VoSli::-webkit-slider-thumb{
+    -webkit-appearance: none;
+   appearance: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: #810202;
+    margin-top: -3%;
+  
+}
+.VoSli:hover{
+    background-color: #363636;
+}
+.button:hover{
+    background-color: #7a6f05;
 }
 </style>
 <audio id="VPRAS">
@@ -100,10 +133,12 @@ background-color: #770606;
 <button class="button" onclick="PVPRS()">Play VPRAS Raid OST</button>
 <br>
 <p>original song by TuneTank on pixabay.</p>
+<br>
+<button class="button" onclick="pawse()">Stop Music</button>
 
 <h3>Volume Control</h3>
 <br>
-<input type="range"
+<input type="range" class="VoSli"
 id="volumeSlide"
 min="0"
 max="100"
